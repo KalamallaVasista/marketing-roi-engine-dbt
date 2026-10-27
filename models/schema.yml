@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    columns:
+      - name: transaction_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_sessions
+    columns:
+      - name: session_id
+        tests:
+          - unique
+          - not_null
